@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Abu Fawaz | My Social Links</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top, #302000 0%, #0b0803 35%, #030303 75%);
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 45px 18px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 650px;
+      text-align: center;
+    }
+
+    /* الصورة */
+    .profile {
+      width: 145px;
+      height: 145px;
+      margin: 0 auto 25px;
+      border-radius: 50%;
+      border: 4px solid #d9a93a;
+      padding: 6px;
+      box-shadow:
+        0 0 20px rgba(218, 169, 58, 0.45),
+        0 0 60px rgba(218, 169, 58, 0.15);
+    }
+
+    .profile img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #111;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-size: 48px;
+      color: #f0c65a;
+      margin-bottom: 12px;
+      text-shadow: 0 0 15px rgba(240, 198, 90, 0.25);
+    }
+
+    .subtitle {
+      color: #d6b45d;
+      font-size: 15px;
+      letter-spacing: 6px;
+      margin-bottom: 38px;
+    }
+
+    .line {
+      display: inline-block;
+      width: 60px;
+      height: 1px;
+      background: #d6a83e;
+      vertical-align: middle;
+      margin: 0 12px;
+    }
+
+    /* الروابط */
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+
+      background: linear-gradient(
+        90deg,
+        rgba(45, 29, 5, 0.75),
+        rgba(20, 13, 3, 0.85)
+      );
+
+      border: 1px solid #d4a53d;
+      border-radius: 25px;
+      padding: 18px 22px;
+
+      transition: 0.3s ease;
+
+      box-shadow:
+        0 0 12px rgba(210, 160, 50, 0.08);
+    }
+
+    .link:hover {
+      transform: translateY(-4px);
+      border-color: #ffe18a;
+      box-shadow:
+        0 0 25px rgba(225, 174, 61, 0.25);
+    }
+
+    .icon {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: #050505;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 26px;
+      margin-right: 18px;
+    }
+
+    .info {
+      text-align: left;
+      flex: 1;
+    }
+
+    .name {
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    .username {
+      color: #a99b80;
+      margin-top: 5px;
+      font-size: 15px;
+    }
+
+    .arrow {
+      width: 43px;
+      height: 43px;
+      border: 1px solid #a77d25;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #e5b83f;
+      font-size: 24px;
+    }
+
+    footer {
+      margin-top: 45px;
+      color: #6f6757;
+      font-size: 13px;
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 38px;
+      }
+
+      .subtitle {
+        font-size: 12px;
+        letter-spacing: 4px;
+      }
+
+      .profile {
+        width: 125px;
+        height: 125px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- الصورة الشخصية -->
+    <div class="profile">
+      <img src="profile.jpg" alt="Abu Fawaz">
+    </div>
+
+    <h1>Abu Fawaz</h1>
+
+    <div class="subtitle">
+      <span class="line"></span>
+      MY SOCIAL LINKS
+      <span class="line"></span>
+    </div>
+
+    <div class="links">
+
+      <!-- Discord -->
+      <a class="link"
+         href="https://discord.gg/MTJ2nhBtug"
+         target="_blank">
+
+        <div class="icon">🎮</div>
+
+        <div class="info">
+          <div class="name">Discord</div>
+          <div class="username">Join My Server</div>
+        </div>
+
+        <div class="arrow">→</div>
+      </a>
+
+
+      <!-- TikTok -->
+      <a class="link"
+         href="https://www.tiktok.com/@abu.shehri09"
+         target="_blank">
+
+        <div class="icon">♪</div>
+
+        <div class="info">
+          <div class="name">TikTok</div>
+          <div class="username">@abu.shehri09</div>
+        </div>
+
+        <div class="arrow">→</div>
+      </a>
+
+
+      <!-- YouTube -->
+      <a class="link"
+         href="https://youtube.com/@playz_omar2"
+         target="_blank">
+
+        <div class="icon">▶</div>
+
+        <div class="info">
+          <div class="name">YouTube</div>
+          <div class="username">@playz_omar2</div>
+        </div>
+
+        <div class="arrow">→</div>
+      </a>
+
+    </div>
+
+    <footer>
+      © 2026 Abu Fawaz — All Rights Reserved
+    </footer>
+
+  </div>
+
+</body>
+</html>
